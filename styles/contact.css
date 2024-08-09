@@ -13,3 +13,89 @@
     margin-left: 23rem;
     margin-bottom: 5rem;
 }
+/* Media Queries */
+
+/* Pantallas muy pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5em;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .section-content {
+        font-size: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+/* Pantallas pequeñas (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .section-title {
+        font-size: 2em;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: auto;
+    }
+
+    .section-content {
+        font-size: 1.2em;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Pantallas medianas (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section-title {
+        font-size: 2.5em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: auto;
+    }
+
+    .section-content {
+        font-size: 1.5em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+/* Pantallas grandes (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .section-title {
+        font-size: 2.8em;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        width: auto;
+    }
+
+    .section-content {
+        font-size: 1.6em;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 6rem;
+    }
+}
+
+/* Pantallas extra grandes (más de 1440px) */
+@media (min-width: 1441px) {
+    .section-title {
+        font-size: 3em;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        width: auto;
+    }
+
+    .section-content {
+        font-size: 1.8em;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-bottom: 7rem;
+    }
+}
