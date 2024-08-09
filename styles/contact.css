@@ -1,0 +1,15 @@
+.main{
+    width: 100vh;
+}
+.main-section{
+    width:100%;
+}
+.section-title{
+    width: 43rem;   
+    margin-top: 3rem;
+    margin-left: 23rem;
+}
+.section-content{
+    margin-left: 23rem;
+    margin-bottom: 5rem;
+}

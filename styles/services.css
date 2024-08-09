@@ -3,12 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+.section-title{
+    text-align: center;
+    font-size: 3em;
+    margin-left: 21rem;
+}
+.section-content{
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 21rem;
+}
 .cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 4rem;
+    padding: 2rem;
 }
 
 .card {
@@ -19,8 +29,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: #fff;
-    
-    margin-left: 18em;
+    margin-left: 21rem;
     margin-right: auto;
 }
 
@@ -34,18 +43,19 @@
 }
 
 .card-title {
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin: 0 0 10px;
 }
 
 .card-description {
-    font-size: 1em;
+    font-size: 2em;
     margin: 0 0 10px;
-    color: #555;
+    color: #000000;
+    margin-bottom: 1.8rem;
 }
 
 .card-price {
-    font-size: 1.2em;
+    font-size: 2.2em;
     font-weight: bold;
-    color: #333;
+    color: #d22323;
 }

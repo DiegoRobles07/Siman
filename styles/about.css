@@ -2,6 +2,7 @@
     position: relative;
     width: 80%;
     margin: auto;
+    margin-top: 5rem;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -10,7 +11,7 @@
     width: 100%;
     height: auto;
     display: block;
-    animation: slide 20s infinite;
+    animation: slide 12s infinite;
 }
 @keyframes slide {
     0% { transform: translateX(0); }
