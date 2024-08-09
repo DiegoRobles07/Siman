@@ -72,13 +72,23 @@ body {
 }
 .aside-img-article{
     width: 100%;
+    height: 50%;
     margin-bottom: 1rem;
 }
+
 .aside-article {
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+.aside-article .aside-img-article {
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+.aside-article .aside-img-article:hover {
+    transform: scale(1.05); /* Escala la imagen a 1.5 veces su tamaño original */
+    cursor: pointer;
 }
 
 .article-title {
@@ -164,8 +174,10 @@ body {
 
 .email-container {
     display: flex;
+    flex-direction: column; /* Alinea elementos en una columna */
     width: 100%;
     margin-top: 10px;
+    gap: 10px; /* Añade espacio entre el input, botón y el párrafo */
 }
 
 .footer-title {
@@ -174,13 +186,18 @@ body {
     color: #333;
     text-align: center;
 }
+.footer-section p {
+    margin-top: 10px; /* Añade espacio en la parte superior del párrafo */
+    text-align: center; /* Centra el texto si es necesario */
+}
 
 .email-input {
     flex: 1;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
     font-size: 1rem;
+    margin-bottom: 10px; /* Añade espacio debajo del input */
 }
 
 .email-button {
@@ -188,10 +205,11 @@ body {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Añade espacio debajo del botón */
 }
 
 .email-button:hover {
@@ -220,6 +238,7 @@ body {
 .social-link {
     margin: 5px;
     transition: transform 0.3s ease;
+    text-decoration: none;
 }
 
 .social-link:hover {
