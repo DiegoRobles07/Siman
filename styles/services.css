@@ -1,24 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.section-title{
+
+.main-section {
+    width: 74rem;
+}
+
+.section-title {
     text-align: center;
     font-size: 3em;
-    margin-left: 21rem;
 }
-.section-content{
+
+.section-content {
     text-align: center;
     font-size: 1.2em;
-    margin-left: 21rem;
 }
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 4rem;
     padding: 2rem;
+    margin-left: 5rem;
 }
 
 .card {
@@ -58,4 +64,234 @@
     font-size: 2.2em;
     font-weight: bold;
     color: #d22323;
+}
+
+/* Pantallas muy pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.2em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-content {
+        font-size: 0.9em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cards-container {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 1.1em;
+    }
+
+    .card-description {
+        font-size: 0.9em;
+    }
+
+    .card-price {
+        font-size: 1em;
+    }
+}
+
+/* Pantallas pequeñas (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .section-title {
+        font-size: 1.5em;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section-content {
+        font-size: 1em;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .cards-container {
+        padding: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 35rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 1.5em;
+    }
+
+    .card-description {
+        font-size: 1.2em;
+    }
+
+    .card-price {
+        font-size: 1.5em;
+    }
+}
+
+/* Pantallas medianas (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section-title {
+        font-size: 2em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .section-content {
+        font-size: 1.2em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .cards-container {
+        padding: 2rem;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 35rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 2em;
+    }
+
+    .card-description {
+        font-size: 1.5em;
+    }
+
+    .card-price {
+        font-size: 2em;
+    }
+}
+
+/* Pantallas grandes (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .section-title {
+        font-size: 2.5em;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .section-content {
+        font-size: 1.5em;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .cards-container {
+        padding: 2.5rem;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 40rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 2.5em;
+    }
+
+    .card-description {
+        font-size: 1.8em;
+    }
+
+    .card-price {
+        font-size: 2.5em;
+    }
+}
+
+/* Pantallas extra grandes (más de 1440px) */
+@media (min-width: 1441px) {
+    .section-title {
+        font-size: 3em;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .section-content {
+        font-size: 1.8em;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .cards-container {
+        padding: 3rem;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 45rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 3em;
+    }
+
+    .card-description {
+        font-size: 2em;
+    }
+
+    .card-price {
+        font-size: 3em;
+    }
 }
